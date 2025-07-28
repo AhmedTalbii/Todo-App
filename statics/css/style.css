@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .BigContainerTodos {
+    display: grid;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body .BigContainerTodos .Title {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body .BigContainerTodos .ContainerTodos {
+    display: flex;
+    flex-direction: column;
+}
+
+body .BigContainerTodos .ContainerTodos .Task {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 500px;
+}
