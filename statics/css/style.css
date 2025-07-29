@@ -21,19 +21,27 @@ body .BigContainerTodos {
 body .BigContainerTodos .Title {
     font-family: "Anton", sans-serif;
     font-weight: 400;
+    font-size: 25px;
     font-style: normal;
+    margin: 5px;
 }
 
 body .BigContainerTodos .ContainerTodos {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 body .BigContainerTodos .ContainerTodos .Task {
     display: flex;
     align-items: center;
-    padding: 5px;
+    gap: 5px;
+    padding: 20px;
     border: 1px solid black;
-    border-radius: 2px;
+    border-radius: 5px;
     width: 500px;
+}
+
+body .BigContainerTodos .ContainerTodos .Task .TitleDescription {
+    width: 70%; 
 }
