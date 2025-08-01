@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap');
 
 body {
     box-sizing: border-box;
@@ -50,6 +51,7 @@ body .BigContainerTodos .ContainerTodos {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-top: 10px;
 }
 
 body .BigContainerTodos .ContainerTodos .Task {
@@ -68,12 +70,21 @@ body .BigContainerTodos .ContainerTodos .Task .TitleDescription {
 }
 
 body .BigContainerTodos .ContainerTodos .Task .TitleDescription .Title {
-    margin-block: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "Nata Sans", sans-serif;
 }
 
 body .BigContainerTodos .ContainerTodos .Task .TitleDescription hr {
     border: none;
     border-top: 2px dashed black;
+}
+
+body .BigContainerTodos .ContainerTodos .Task .TitleDescription .Description {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: "Nata Sans", sans-serif;
+    color: rgb(109, 109, 109);
 }
 
 body .BigContainerTodos .ContainerTodos .Task .Actions {
