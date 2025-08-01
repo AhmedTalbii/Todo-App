@@ -10,8 +10,8 @@ import (
 func PageRender(w http.ResponseWriter, temp string, status int, data any) {
 	templateCompressed, errParsing := template.ParseFiles(configs.ViewsPath+"layout.html",configs.PagesPath+temp)
 	if errParsing != nil {
-		w.Write([]byte("Error Parsing files"))
 		w.WriteHeader(status)
+		w.Write([]byte("Error Parsing files" + errParsing.Error()))
 		return
 	}
 	templateCompressed.ExecuteTemplate(w , "Layout", data)

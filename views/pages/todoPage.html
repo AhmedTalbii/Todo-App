@@ -1,13 +1,17 @@
 {{define "Page"}}
 <div class="BigContainerTodos">
-    <h2 class="Title">Todo App</h2>
+    <!-- header -->
+    <div class="Header">
+        <h2 class="Title">Todo App</h2>
+        <a href=""><button>add <i class="fa-solid fa-plus"></i></button></a>
+    </div>
     <div class="ContainerTodos">
         <!-- tasks -->
         <div class="Task">
             <!-- left section -->
             <div class="TitleDescription">
                 <div class="Title">
-                    task1 
+                    task1
                 </div>
                 <hr>
                 <div class="Description">
@@ -15,14 +19,16 @@
                 </div>
             </div>
             <!-- right section actions -->
-            <i class="fa-solid fa-plus"></i> Add
-
+            <div class="Actions">
+                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""><i class="fa-solid fa-trash"></i></a>
+            </div>
         </div>
         <div class="Task">
             <!-- left section -->
             <div class="TitleDescription">
                 <div class="Title">
-                    task1 
+                    task1
                 </div>
                 <hr>
                 <div class="Description">
@@ -37,7 +43,7 @@
             <!-- left section -->
             <div class="TitleDescription">
                 <div class="Title">
-                    task1 
+                    task1
                 </div>
                 <hr>
                 <div class="Description">

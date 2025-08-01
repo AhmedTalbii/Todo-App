@@ -11,6 +11,12 @@ body {
     justify-content: center;
 }
 
+/* global */
+a {
+    text-decoration: none;
+    color: black;
+}
+
 body .BigContainerTodos {
     display: grid;
     border: 1px solid black;
@@ -18,12 +24,26 @@ body .BigContainerTodos {
     border-radius: 10px;
 }
 
-body .BigContainerTodos .Title {
+body .BigContainerTodos .Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+body .BigContainerTodos .Header .Title {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-size: 25px;
     font-style: normal;
     margin: 5px;
+    color: red;
+}
+
+body .BigContainerTodos .Header a button {
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 body .BigContainerTodos .ContainerTodos {
@@ -37,11 +57,32 @@ body .BigContainerTodos .ContainerTodos .Task {
     align-items: center;
     gap: 5px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px dashed black;
     border-radius: 5px;
     width: 500px;
 }
 
+/* left side  */
 body .BigContainerTodos .ContainerTodos .Task .TitleDescription {
-    width: 70%; 
+    width: 80%;
+}
+
+body .BigContainerTodos .ContainerTodos .Task .TitleDescription .Title {
+    margin-block: 20px;
+}
+
+body .BigContainerTodos .ContainerTodos .Task .TitleDescription hr {
+    border: none;
+    border-top: 2px dashed black;
+}
+
+body .BigContainerTodos .ContainerTodos .Task .Actions {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+body .BigContainerTodos .ContainerTodos .Task .Actions a {
+    text-decoration: none;
+    color: black;
 }
