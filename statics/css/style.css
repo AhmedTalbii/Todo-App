@@ -3,10 +3,9 @@
 
 body {
     box-sizing: border-box;
-    padding: 0;
+    padding: 20px;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,6 +20,7 @@ a {
 body .BigContainerTodos {
     display: grid;
     border: 1px solid black;
+    width: 60%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -54,46 +54,54 @@ body .BigContainerTodos .ContainerTodos {
     margin-top: 10px;
 }
 
-body .BigContainerTodos .ContainerTodos .Task {
+body .BigContainerTodos .ContainerTodos .Tasks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+body .BigContainerTodos .ContainerTodos .Tasks .Task {
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 20px;
     border: 1px dashed black;
     border-radius: 5px;
-    width: 500px;
+    width: 95%;
 }
 
-/* left side  */
-body .BigContainerTodos .ContainerTodos .Task .TitleDescription {
+body .BigContainerTodos .ContainerTodos .Tasks .Task .TitleDescription {
     width: 80%;
 }
 
-body .BigContainerTodos .ContainerTodos .Task .TitleDescription .Title {
+body .BigContainerTodos .ContainerTodos .Tasks .Task .TitleDescription .Title {
     font-size: 20px;
     text-transform: capitalize;
     font-family: "Nata Sans", sans-serif;
 }
 
-body .BigContainerTodos .ContainerTodos .Task .TitleDescription hr {
+body .BigContainerTodos .ContainerTodos .Tasks .Task .TitleDescription hr {
     border: none;
     border-top: 2px dashed black;
 }
 
-body .BigContainerTodos .ContainerTodos .Task .TitleDescription .Description {
+body .BigContainerTodos .ContainerTodos .Tasks .Task .TitleDescription .Description {
     font-size: 15px;
     text-transform: capitalize;
     font-family: "Nata Sans", sans-serif;
     color: rgb(109, 109, 109);
 }
 
-body .BigContainerTodos .ContainerTodos .Task .Actions {
+body .BigContainerTodos .ContainerTodos .Tasks .Task .Actions {
     width: 20%;
     display: flex;
     justify-content: space-around;
 }
 
-body .BigContainerTodos .ContainerTodos .Task .Actions a {
+body .BigContainerTodos .ContainerTodos .Tasks .Task .Actions a {
     text-decoration: none;
     color: black;
 }
